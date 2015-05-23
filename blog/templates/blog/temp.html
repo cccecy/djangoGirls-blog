@@ -1,0 +1,12 @@
+    <div class="col-lg-12">
+        <div class="date">
+                <p class="text-primary">{{ post.published_date }}</p>
+        </div>
+    </div>
+    <div class="col-lg-12 col-offset-lg-2">
+        <div class="panel panel-info">
+            <div class="panel-heading"><a href="">{{ post.title }}</a></div>
+            <div class="panel-body"><p>{{ post.text|linebreaks }}</p></div>
+        </div>
+    </div>
+{% endfor %}
